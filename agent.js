@@ -74,7 +74,7 @@ getDefaultSettings() {
     return {
         llm: { 
             provider: 'openai', 
-            apiKey: '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', 
+            apiKey: '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', 
             model: 'gpt-4o-mini', 
             maxTokens: 2000, 
             temperature: 0.7 
