@@ -70,21 +70,14 @@ class GyaanSetu {
         }
     }
 
-getDefaultSettings() {
-    return {
-        llm: { 
-            provider: 'openai', 
-            apiKey: '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', 
-            model: 'gpt-4o', 
-            maxTokens: 2000, 
-            temperature: 0.7 
-        },
-        ui: { theme: 'auto', animationsEnabled: true, soundEnabled: false, fontSize: 'medium' },
-        voice: { enabled: false, outputEnabled: false, language: 'en-US', speechRate: 1.0 },
-        advanced: { autoSave: true, analyticsEnabled: false, maxHistory: 100 }
-    };
-}
-
+    getDefaultSettings() {
+        return {
+            llm: { provider: 'aipipe', apiKey: '', model: 'default', maxTokens: 2000, temperature: 0.7 },
+            ui: { theme: 'auto', animationsEnabled: true, soundEnabled: false, fontSize: 'medium' },
+            voice: { enabled: false, outputEnabled: false, language: 'en-US', speechRate: 1.0 },
+            advanced: { autoSave: true, analyticsEnabled: false, maxHistory: 100 }
+        };
+    }
 
     initializeTools() {
         return [
